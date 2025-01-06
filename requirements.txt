@@ -1,3 +1,4 @@
 usrp-uhd-client @ git+https://github.com/Barkhausen-Institut/usrp_uhd_wrapper@5490d4e
 hermespy @ git+https://github.com/Barkhausen-Institut/hermespy@4b44dbc
 scienceplots
+cvxpy

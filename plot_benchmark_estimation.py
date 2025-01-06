@@ -19,7 +19,7 @@ from scipy.io import loadmat
 plt.style.use(['science', 'ieee', 'no-latex'])
 
 # Load the results from the benchmark estimation
-results_path = path.join(path.dirname(__file__), '..', 'results', 'check_calibration', 'results.mat')
+results_path = path.join(path.dirname(__file__), 'results', 'check_calibration', 'results.mat')
 results = loadmat(results_path)
 
 noise_variance = np.asarray(results['result_1']).flatten()

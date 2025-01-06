@@ -14,7 +14,7 @@ import numpy as np
 import scienceplots  # type: ignore
 from h5py import File
 
-from beamforming import SphericalFocus
+from hermespy.beamforming import SphericalFocus
 from hermespy.radar import ReceiverOperatingCharacteristic
 from hermespy.hardware_loop import SelectiveLeakageCalibration
 from hermespy.hardware_loop.uhd import UsrpSystem
@@ -72,7 +72,7 @@ terminal_dsp = ReceivingModem()
 terminal_dsp.waveform = ofdm
 terminal_device.add_dsp(terminal_dsp)
 
-results_path = path.join(path.dirname(__file__), '..', 'results')
+results_path = path.join(path.dirname(__file__), 'results')
 
 def load_roc_calibrated(campaign: str):
     file = File(path.join(results_path, campaign, 'leakage_estimate.h5'), 'r')

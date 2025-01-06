@@ -19,7 +19,7 @@ from scipy.io import loadmat
 plt.style.use(['science', 'ieee', 'no-latex'])
 
 # Select the correct path
-results_path = path.join(path.dirname(__file__), '..', 'results')
+results_path = path.join(path.dirname(__file__), 'results')
 
 
 # Load the results from the benchmark estimation

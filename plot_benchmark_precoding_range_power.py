@@ -14,7 +14,7 @@ import numpy as np
 import scienceplots  # type: ignore
 from h5py import File
 
-from beamforming import SphericalFocus
+from hermespy.beamforming import SphericalFocus
 from hermespy.hardware_loop import SelectiveLeakageCalibration, UsrpSystem
 
 from dsp import NewJCAS
@@ -49,7 +49,7 @@ jcas_dsp = NewJCAS(
 )
 jcas_device.add_dsp(jcas_dsp)
 
-results_path = path.join(path.dirname(__file__), '..', 'results')
+results_path = path.join(path.dirname(__file__), 'results')
 
 
 def estimate_mean_range_power(scenario: UsrpSystem) -> np.ndarray:
