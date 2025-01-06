@@ -1,7 +1,7 @@
 # Self-Interference Cancellation in Digital Sensing and Communication Arrays
 
-This repostiory contains the Python source code required to reproduce the results presented in
-the paper "Self-Interference Cancellation in Digital Sensing and Communication Arrays" presented at the 5th IEEE International Symposium on Joint Communications & Sensing.
+This repository contains the Python source code required to reproduce the results presented at the 5th IEEE International Symposium on Joint Communications & Sensing in
+the paper "Self-Interference Cancellation in Digital Sensing and Communication Arrays".
 
 It relies on the link-level evaluation package [HermesPy](https://github.com/Barkhausen-Institut/hermespy) in combination with a hardware setup consisting of two Universal Software Defined Radio Peripherals (USRPs) supporting [UHD](https://github.com/Barkhausen-Institut/usrp_uhd_wrapper).
 
@@ -10,10 +10,11 @@ It relies on the link-level evaluation package [HermesPy](https://github.com/Bar
 A clean virtual environment of Python version 3.11 is recommended,
 all requirements can be downloaded and installed via
 ```shell
-pip install -r requirements.txt
+pip install -vr requirements.txt
 ```
 
 Please note that HermesPy binaries will be build from source and require a detectable build toolchain to be present, refer to [HermesPy's installation instructions](https://hermespy.org/installation.html#install-from-source) for further details.
+The overall compilation and installation process may take a while.
 
 ## Usage
 
